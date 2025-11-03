@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM golang:1.23-alpine AS builder
+FROM public.ecr.aws/docker/library/golang:1.23-alpine AS builder
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ COPY . .
 RUN go build -o server .
 
 # Stage 2: Run
-FROM alpine:3.20
+FROM public.ecr.aws/docker/library/golang:1.23-alpine
 
 WORKDIR /app
 
