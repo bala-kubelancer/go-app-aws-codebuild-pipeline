@@ -13,14 +13,14 @@ phases:
   build:
     commands:
       - echo Building the Docker image...
-      - docker build -t $REPOSITORY_URI:latest .
-      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+      - docker build -t go-app .
+      - docker tag go-app:latest 952889062243.dkr.ecr.us-east-1.amazonaws.com/go-app:latest
 
   post_build:
     commands:
       - echo Pushing Docker image to ECR...
-      - docker push $REPOSITORY_URI:latest
-      - docker push $REPOSITORY_URI:$IMAGE_TAG
+      - docker push 952889062243.dkr.ecr.us-east-1.amazonaws.com/go-app:latest
+
       - echo Writing image definitions file...
       - printf '[{"name":"go-app","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json
