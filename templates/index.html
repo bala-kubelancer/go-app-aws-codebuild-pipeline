@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kubelancer Labs</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to right, #3aa34b, #2b84d2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  /* HEADER */
+  header {
+    background-color: #0a1f33;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  .more-labs-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 26px;
+    color: white;
+    background-color: #222;
+    font-size: 1.1em;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-clip: padding-box;
+  }
+
+  .more-labs-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 2px;
+    background: linear-gradient(90deg, #007BFF, #FFD700);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .more-labs-btn:hover {
+    background-color: #333;
+  }
+
+  .more-labs-btn span {
+    margin-left: 8px;
+    font-size: 1.2em;
+    transition: transform 0.2s ease;
+  }
+
+  .more-labs-btn:hover span {
+    transform: translateX(5px);
+  }
+
+  /* MAIN */
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  main p {
+    font-size: 3em;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    max-width: 90%;
+  }
+
+  /* FOOTER */
+  footer {
+    background-color: #0a1f33;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  footer h1 {
+    margin: 0 0 20px 0;
+    font-size: 1.6em;
+    color: #ffffffcc;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto 20px;
+  }
+
+  footer a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s;
+  }
+
+  footer a:hover {
+    color: #ffd700;
+  }
+
+  .footer-bottom {
+    font-size: 0.9em;
+    color: #aaa;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Empowering Cloud and DevOps Innovation — Kubelancer Labs</h1>
+    <a class="more-labs-btn" href="https://labs.kubelancer.com" target="_blank">
+      More Labs <span>→</span>
+    </a>
+  </header>
+
+  <main>
+    <p>Demo Lab: Simple Go web application!</p>
+  </main>
+
+<!-- REPLACE your existing <footer> with this -->
+<footer class="kc-footer">
+
+
+  <div class="kc-marquee" aria-hidden="false" role="list">
+    <div class="kc-marquee__inner">
+        <div class="kc-step">Kube it.</div>
+        <div class="kc-step">GitOps it.</div>
+        <div class="kc-step">CI/CD it.</div>
+        <div class="kc-step">Infra as Code it.</div>
+        <div class="kc-step">Secure it.</div>
+        <div class="kc-step">Scale it.</div>
+        <div class="kc-step">Observe it.</div>
+        <div class="kc-step">Log it.</div>
+        <div class="kc-step">Optimize it.</div>
+        <div class="kc-step">Automate it.</div>
+        <div class="kc-step">Integrate it.</div>
+        <div class="kc-step">Deliver it.</div>
+        <div class="kc-step">Release it.</div>
+        <div class="kc-step">Rollback it.</div>
+        <div class="kc-step">Recover it.</div>
+        <div class="kc-step">Backup it.</div>
+        <div class="kc-step">Tune it.</div>
+        <div class="kc-step">Manage it.</div>
+        <div class="kc-step">Version it.</div>
+        <div class="kc-step">Deploy it.</div>
+        <div class="kc-step">Visualize it.</div>
+        <div class="kc-step">Scale-out it.</div>
+        <div class="kc-step">Scale-up it.</div>
+        <div class="kc-step">Refactor it.</div>
+        <div class="kc-step">Automate more.</div>
+        <div class="kc-step">Simplify it.</div>
+        <div class="kc-step">Audit it.</div>
+        <div class="kc-step">Document it.</div>
+        <div class="kc-step">Test again.</div>
+        <div class="kc-step">Pipeline it.</div>
+        <div class="kc-step">Terraform it.</div>
+        <div class="kc-step">GitOps it.</div>
+        <div class="kc-step">ServiceMesh it.</div>
+        <div class="kc-step">Helm it.</div>
+        <div class="kc-step">Cluster it.</div>
+        <div class="kc-step">LoadBalance it.</div>
+        <div class="kc-step">Deploy smarter.</div>
+        <div class="kc-step">Scale infinitely.</div>
+        <div class="kc-step">CloudNative it.</div>
+        <div class="kc-step">Modernize it.</div>
+        <div class="kc-step">Automate all.</div>
+        <div class="kc-step">Innovate it.</div>
+        <div class="kc-step">Deliver value.</div>
+        <div class="kc-step">Repeat it.</div>    
+
+
+      <!-- Repeat for seamless loop -->
+      <div class="kc-step">Think it.</div>
+      <div class="kc-step">Design it.</div>
+      <div class="kc-step">Automate it.</div>
+      <div class="kc-step">Code it.</div>
+      <div class="kc-step">Build it.</div>
+      <div class="kc-step">Run it.</div>
+      <div class="kc-step">Test it.</div>
+      <div class="kc-step">Ship it.</div>
+      <div class="kc-step">Deploy it.</div>
+      <div class="kc-step">Cloud it.</div>
+      <div class="kc-step">Dockerize it.</div>
+      <div class="kc-step">Manifest it.</div>
+      <div class="kc-step">Monitor it.</div>
+      <div class="kc-step">Alert it.</div>
+      <div class="kc-step">Network it.</div>
+      <div class="kc-step">Microservice it.</div>
+      <div class="kc-step">Migrate it.</div>
+      <div class="kc-step">Containerize it.</div>
+    </div>
+  </div>
+
+
+</footer>
+
+<!-- CSS (place inside your <style> or static css file) -->
+<style>
+  /* Footer base */
+  .kc-footer{
+    background-color: #0a1f33;
+    padding: 28px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  .kc-footer-title{
+    margin: 0 0 12px;
+    font-size: 1.4rem;
+    color: #ffffffcc;
+  }
+
+  /* Marquee / ticker */
+  .kc-marquee{
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    /* reduce height so pills look compact */
+    padding: 12px 0;
+    box-sizing: border-box;
+  }
+
+  .kc-marquee__inner{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    /* animate translateX from 0 to -50% so the duplicated block creates seamless loop */
+    animation: kc-marquee-move 18s linear infinite;
+    will-change: transform;
+  }
+
+  .kc-step{
+    flex: 0 0 auto;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.98rem;
+    color: #fff;
+    background: linear-gradient(90deg, #efb106 0%, #d50570 50%, #f5060e 100%);
+    background-size: 200% 100%;
+    box-shadow: 0 6px 18px rgba(2,8,15,0.45);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+
+  .kc-step:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(2,8,15,0.5);
+  }
+
+  /* loop animation: move left by half the inner width (we duplicated items) */
+  @keyframes kc-marquee-move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* -50% because inner contains two copies */
+  }
+
+  /* pause animation when user hovers the marquee */
+  .kc-marquee:hover .kc-marquee__inner,
+  .kc-marquee:focus-within .kc-marquee__inner {
+    animation-play-state: paused;
+  }
+
+  /* Respect user preference for reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .kc-marquee__inner { animation: none; }
+    .kc-step { transition: none; }
+  }
+
+  /* small screens: shrink pills and spacing */
+  @media (max-width: 600px) {
+    .kc-marquee__inner { gap: 10px; }
+    .kc-step { padding: 8px 12px; font-size: 0.9rem; }
+    .kc-marquee__inner { animation-duration: 22s; } /* slower on mobile for readability */
+  }
+</style>
+
+</body>
+</html>
